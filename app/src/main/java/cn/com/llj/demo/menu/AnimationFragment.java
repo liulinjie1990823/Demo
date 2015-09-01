@@ -21,7 +21,7 @@ public class AnimationFragment extends ListMenuFragment {
 
     @Override
     protected String getPackageName() {
-        return "com.example.demo.activity.anim";
+        return "cn.com.llj.demo.activity.animation";
     }
 
 

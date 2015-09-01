@@ -13,8 +13,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.common.library.llj.base.BaseFragmentActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +36,7 @@ import cn.com.llj.demo.menu.ViewPagerFragment;
 /**
  * Created by liulj on 15/9/1.
  */
-public class HomeActivity extends BaseFragmentActivity {
+public class HomeActivity extends DemoActivity {
     @Bind(R.id.left_drawer)
     ListView mLeftDrawer;// 默认当前页为-1，
     @Bind(R.id.drawerLayout)

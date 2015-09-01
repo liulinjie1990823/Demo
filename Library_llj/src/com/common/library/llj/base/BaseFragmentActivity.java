@@ -25,7 +25,6 @@ import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.bumptech.glide.request.target.ViewTarget;
 import com.common.library.llj.R;
 import com.common.library.llj.lifecycle.LifecycleDispatcher;
-import com.common.library.llj.utils.AsyncHttpClientUtil;
 import com.common.library.llj.utils.BitmapUtilLj;
 import com.common.library.llj.utils.FileUtilLj;
 import com.common.library.llj.utils.LogUtilLj;
@@ -58,7 +57,8 @@ public abstract class BaseFragmentActivity extends AppCompatActivity implements 
             //titlebar
             View view = getLayoutView();
             view.setFitsSystemWindows(true);
-            view.setBackgroundColor(Color.parseColor("#222231"));
+//            view.setBackgroundColor(Color.parseColor("#222231"));
+            view.setBackgroundColor(Color.parseColor("#ffffff"));
             setContentView(view);
         } else {
             //
@@ -66,7 +66,8 @@ public abstract class BaseFragmentActivity extends AppCompatActivity implements 
             View view = getLayoutInflater().inflate(getLayoutId(), null);
             frameLayout.addView(view, new FrameLayout.LayoutParams(-1, -1));
             frameLayout.setFitsSystemWindows(true);
-            frameLayout.setBackgroundColor(Color.parseColor("#222231"));
+//            frameLayout.setBackgroundColor(Color.parseColor("#222231"));
+            frameLayout.setBackgroundColor(Color.parseColor("#ffffff"));
             setContentView(frameLayout);
         }
         ButterKnife.bind(this);

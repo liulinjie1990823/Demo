@@ -19,7 +19,43 @@
             </intent-filter>
         </activity>
 
-
+        <activity
+            android:name="cn.com.llj.demo.activity.animation.ActivityAnimationDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.ScaleUpDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.animation.TransitionDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.TransitionBlueDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SharedElementNoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.TransitionOrDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.TransitionRedDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.TransitionPurpleDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.attach.TransitionBlackDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
     </application>
 
 </manifest>

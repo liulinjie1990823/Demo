@@ -12,7 +12,7 @@ public class BuildVersionUtil {
      * @return
      */
     public static boolean afterIce() {
-        return Build.VERSION.SDK_INT > Build.VERSION_CODES.ICE_CREAM_SANDWICH;
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH;
     }
 
     /**
@@ -21,6 +21,15 @@ public class BuildVersionUtil {
      * @return
      */
     public static boolean afterKITKAT() {
-        return Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT;
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+    }
+
+    /**
+     * 19以后
+     *
+     * @return
+     */
+    public static boolean afterLOLLIPOP() {
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;
     }
 }
