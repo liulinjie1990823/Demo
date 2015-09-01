@@ -20,6 +20,20 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.OnItemClick;
+import cn.com.llj.demo.menu.AnimationFragment;
+import cn.com.llj.demo.menu.ButtonFragment;
+import cn.com.llj.demo.menu.GridViewFragment;
+import cn.com.llj.demo.menu.ImageViewFragment;
+import cn.com.llj.demo.menu.ListViewFragment;
+import cn.com.llj.demo.menu.MenuFragment;
+import cn.com.llj.demo.menu.NetFragment;
+import cn.com.llj.demo.menu.OtherFragment;
+import cn.com.llj.demo.menu.ProgressbarFragment;
+import cn.com.llj.demo.menu.ScrollViewFragment;
+import cn.com.llj.demo.menu.TextViewFragment;
+import cn.com.llj.demo.menu.TimeViewFragment;
+import cn.com.llj.demo.menu.TitlebarFragment;
+import cn.com.llj.demo.menu.ViewPagerFragment;
 
 /**
  * Created by liulj on 15/9/1.
@@ -99,7 +113,7 @@ public class HomeActivity extends BaseFragmentActivity {
 
     @Override
     public void initViews() {
-        mMenuData.add("AnimFragment");
+        mMenuData.add("AnimationFragment");
         mMenuData.add("ButtonFragment");
         mMenuData.add("GridViewFragment");
         mMenuData.add("ImageViewFragment");
@@ -165,50 +179,50 @@ public class HomeActivity extends BaseFragmentActivity {
      */
     private Fragment makeFragment(int curItem) {
         Fragment fragment = null;
-//        switch (curItem) {
-//            case 0:
-//                fragment = new AnimFragment();
-//                break;
-//            case 1:
-//                fragment = new ButtonFragment();
-//                break;
-//            case 2:
-//                fragment = new GridViewFragment();
-//                break;
-//            case 3:
-//                fragment = new ImageViewFragment();
-//                break;
-//            case 4:
-//                fragment = new ListViewFragment();
-//                break;
-//            case 5:
-//                fragment = new MenuFragment();
-//                break;
-//            case 6:
-//                fragment = new NetFragment();
-//                break;
-//            case 7:
-//                fragment = new OtherFragment();
-//                break;
-//            case 8:
-//                fragment = new ProgressbarFragment();
-//                break;
-//            case 9:
-//                fragment = new ScrollViewFragment();
-//                break;
-//            case 10:
-//                fragment = new TextViewFragment();
-//                break;
-//            case 11:
-//                fragment = new TimeViewFragment();
-//                break;
-//            case 12:
-//                fragment = new TitlebarFragment();
-//                break;
-//            case 13:
-//                fragment = new ViewPagerFragment();
-//                break;
-//        }
+        switch (curItem) {
+            case 0:
+                fragment = new AnimationFragment();
+                break;
+            case 1:
+                fragment = new ButtonFragment();
+                break;
+            case 2:
+                fragment = new GridViewFragment();
+                break;
+            case 3:
+                fragment = new ImageViewFragment();
+                break;
+            case 4:
+                fragment = new ListViewFragment();
+                break;
+            case 5:
+                fragment = new MenuFragment();
+                break;
+            case 6:
+                fragment = new NetFragment();
+                break;
+            case 7:
+                fragment = new OtherFragment();
+                break;
+            case 8:
+                fragment = new ProgressbarFragment();
+                break;
+            case 9:
+                fragment = new ScrollViewFragment();
+                break;
+            case 10:
+                fragment = new TextViewFragment();
+                break;
+            case 11:
+                fragment = new TimeViewFragment();
+                break;
+            case 12:
+                fragment = new TitlebarFragment();
+                break;
+            case 13:
+                fragment = new ViewPagerFragment();
+                break;
+        }
         return fragment;
     }
 
