@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">lib_llj</string>
+    <string name="warn_exit_msg">再按一次退出程序</string>
+    <string name="is_downing">正在下载</string>
+    <string name="listview_is_downing">加载中...</string>
+    <string name="listview_click_loadmore">点击加载更多</string>
+
+</resources>
