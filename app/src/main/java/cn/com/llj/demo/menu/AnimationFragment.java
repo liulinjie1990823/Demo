@@ -12,11 +12,10 @@ public class AnimationFragment extends ListMenuFragment {
     protected void setListData(List<String> mListData) {
         mListData.add("ActivityAnimationDemo");
         mListData.add("AnimationDemo");
-        mListData.add("AnimationDialogDemo");
+        mListData.add("NiftyDialogDemo");
         mListData.add("LayoutAnimationDemo");
         mListData.add("TransitionDemo");
-        mListData.add("TransitionDemo1");
-        mListData.add("TransitionWhereDemo");
+        mListData.add("TransitionEverywhereDemo");
     }
 
     @Override
