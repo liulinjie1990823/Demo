@@ -15,13 +15,13 @@ public class TitlebarFragment extends ListMenuFragment {
         mListData.add("NoBoringActionBarDemo");
         mListData.add("ParallaxToolbarScrollViewDemo");
         mListData.add("ScrollViewTitlebarDemo");
-        mListData.add("ViewPagerTabScrollViewFragment");
+        mListData.add("ViewPagerTitlebarDemo");
 
     }
 
     @Override
     protected String getPackageName() {
-        return "com.example.demo.activity.anim";
+        return "cn.com.llj.demo.activity.titlebar";
     }
 }
 

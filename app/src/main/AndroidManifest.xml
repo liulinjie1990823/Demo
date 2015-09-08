@@ -130,6 +130,55 @@
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.gridView.StickyGridHeadersDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.BoltsDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.viewpager.VerticalViewPagerDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.viewpager.PagerSlidingTabStripDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.FlexibleSpaceTitlebarScrollViewDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.ListViewTitlebarDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.NoBoringActionBarDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.ParallaxToolbarScrollViewDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.ScrollViewTitlebarDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.llj.demo.activity.titlebar.ViewPagerTitlebarDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:theme="@style/NoActionbarAppTheme"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Random;
 
 import cn.com.llj.demo.DemoActivity;
-import cn.com.llj.demo.ImageListResponse;
+import cn.com.llj.demo.netbean.ImageListResponse;
 import cn.com.llj.demo.R;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;

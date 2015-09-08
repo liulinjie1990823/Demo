@@ -1,4 +1,4 @@
-package cn.com.llj.demo;
+package cn.com.llj.demo.netbean;
 
 import com.common.library.llj.base.BaseReponse;
 
