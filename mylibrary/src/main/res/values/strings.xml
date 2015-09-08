@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyLibrary</string>
+    <string name="button_test">test</string>
+    <string name="button_horizontalMargin">horizontal</string>
+    <string name="button_verticalMargin">vertical</string>
+    <string name="button_longTest">not fit in previous line</string>
+    <string name="button_newLine">break line</string>
 </resources>

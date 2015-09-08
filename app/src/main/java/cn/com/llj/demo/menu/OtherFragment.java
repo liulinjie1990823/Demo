@@ -11,6 +11,7 @@ public class OtherFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
         mListData.add("BoltsDemo");
+        mListData.add("FlowLayoutDemo");
     }
 
     @Override

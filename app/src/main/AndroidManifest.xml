@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="cn.com.llj.demo">
 
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -61,6 +62,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
+    <uses-sdk tools:overrideLibrary="com.liangfeizc.flowlayout" />
     <application
         android:name="cn.com.llj.demo.DemoApplication"
         android:icon="@drawable/ic_launcher"
@@ -152,33 +154,43 @@
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.FlexibleSpaceTitlebarScrollViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ListViewTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.NoBoringActionBarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ParallaxToolbarScrollViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ScrollViewTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ViewPagerTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:theme="@style/NoActionbarAppTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.FlowLayoutDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.imageview.SwipeCardDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
     </application>
 
 </manifest>
