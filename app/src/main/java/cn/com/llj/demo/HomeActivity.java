@@ -8,10 +8,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+
+import com.common.library.llj.base.BaseApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,11 +46,14 @@ public class HomeActivity extends DemoActivity {
     @Bind(R.id.drawerLayout)
     DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
+
     private ActionBar mActionBar;
     private FragmentManager mFragmentManager;
     private List<String> mMenuData = new ArrayList<String>();
     private int mShowItem = 0;// 默认当前页为-1，加载第一个fragment后mCurrentItem就为1
     private int mHideItem = 0;
+    @Bind(R.id.li_menu)
+    LinearLayout mMenuLi;
 
     @Override
     public int getLayoutId() {
@@ -55,6 +62,12 @@ public class HomeActivity extends DemoActivity {
 
     @Override
     public void findViews(Bundle savedInstanceState) {
+
+        mMenuLi.getLayoutParams().width = BaseApplication.DISPLAY_WIDTH * 4 / 5;
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         mActionBar = getSupportActionBar();
         mActionBar.setDisplayHomeAsUpEnabled(true);
         // mActionBar.setLogo(R.drawable.ic_launcher);
@@ -94,7 +107,7 @@ public class HomeActivity extends DemoActivity {
     @OnItemClick(R.id.left_drawer)
     public void listItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
         mLeftDrawer.setItemChecked(arg2, true);
-        mDrawerLayout.closeDrawer(mLeftDrawer);
+        mDrawerLayout.closeDrawer(mMenuLi);
         if (mShowItem != arg2)
             selectItem(mShowItem, arg2, false);
     }

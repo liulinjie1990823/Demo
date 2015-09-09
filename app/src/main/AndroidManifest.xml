@@ -72,7 +72,8 @@
         <activity
             android:name="cn.com.llj.demo.HomeActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v21">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -141,7 +142,7 @@
             android:name="cn.com.llj.demo.activity.other.BoltsDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
             android:name="cn.com.llj.demo.activity.viewpager.VerticalViewPagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
@@ -185,12 +186,37 @@
             android:name="cn.com.llj.demo.activity.other.FlowLayoutDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme_v21" />
         <activity
             android:name="cn.com.llj.demo.activity.imageview.SwipeCardDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.imageview.SelectableRoundedImageViewDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MaterialDesignDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo2"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo3"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v21" />
     </application>
 
 </manifest>

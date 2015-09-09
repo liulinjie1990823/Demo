@@ -3,4 +3,5 @@
     <color name="material_blue_500">#4285f4</color>
     <color name="material_blue_700">#3367d6</color>
     <color name="material_green_A200">#FD87A9</color>
+    <color name="bg">#FFF5F5F5</color>
 </resources>

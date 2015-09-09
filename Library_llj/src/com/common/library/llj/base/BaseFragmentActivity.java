@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +12,6 @@ import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
@@ -58,17 +56,20 @@ public abstract class BaseFragmentActivity extends AppCompatActivity implements 
             View view = getLayoutView();
             view.setFitsSystemWindows(true);
 //            view.setBackgroundColor(Color.parseColor("#222231"));
-            view.setBackgroundColor(Color.parseColor("#ffffff"));
+//            view.setBackgroundColor(Color.parseColor("#ffffff"));
             setContentView(view);
         } else {
             //
-            FrameLayout frameLayout = new FrameLayout(this);
-            View view = getLayoutInflater().inflate(getLayoutId(), null);
-            frameLayout.addView(view, new FrameLayout.LayoutParams(-1, -1));
-            frameLayout.setFitsSystemWindows(true);
+//            FrameLayout frameLayout = new FrameLayout(this);
+//            View view = getLayoutInflater().inflate(getLayoutId(), null);
+//            frameLayout.addView(view, new FrameLayout.LayoutParams(-1, -1));
+//            frameLayout.setFitsSystemWindows(true);
 //            frameLayout.setBackgroundColor(Color.parseColor("#222231"));
-            frameLayout.setBackgroundColor(Color.parseColor("#ffffff"));
-            setContentView(frameLayout);
+//            frameLayout.setBackgroundColor(Color.parseColor("#ffffff"));
+//            setContentView(frameLayout);
+            View view = getLayoutInflater().inflate(getLayoutId(), null);
+            view.setFitsSystemWindows(true);
+            setContentView(view);
         }
         ButterKnife.bind(this);
         findViews(savedInstanceState);

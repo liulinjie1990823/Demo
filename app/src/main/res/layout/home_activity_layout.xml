@@ -3,21 +3,10 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
 
-    <RelativeLayout
-        android:id="@+id/rl_fragment_contain"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></RelativeLayout>
+    <include layout="@layout/include_home_contain" />
 
-    <ListView
-        android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@android:color/white"
-        android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0dp" />
-
+    <include layout="@layout/include_home_menu" />
 </android.support.v4.widget.DrawerLayout>
