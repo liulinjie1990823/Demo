@@ -13,6 +13,8 @@ public class OtherFragment extends ListMenuFragment {
         mListData.add("BoltsDemo");
         mListData.add("FlowLayoutDemo");
         mListData.add("MaterialDesignDemo");
+        mListData.add("BlurringViewDemo");
+        mListData.add("WaveViewDemo");
     }
 
     @Override
