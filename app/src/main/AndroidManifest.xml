@@ -65,7 +65,7 @@
     <uses-sdk tools:overrideLibrary="com.liangfeizc.flowlayout" />
     <application
         android:name="cn.com.llj.demo.DemoApplication"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_menu"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <!-- 登录模块 -->
@@ -124,7 +124,27 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
         <activity
+            android:name="cn.com.llj.demo.activity.animation.LayoutAnimationDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.NotificationDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
             android:name="cn.com.llj.demo.activity.animation.NiftyDialogDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.timeView.DatepickerdialogDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.animation.PropertyAnimationDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
@@ -224,6 +244,11 @@
             android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.other.WaveViewDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.TouchEventDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />

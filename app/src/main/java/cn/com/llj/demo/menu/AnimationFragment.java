@@ -16,6 +16,7 @@ public class AnimationFragment extends ListMenuFragment {
         mListData.add("LayoutAnimationDemo");
         mListData.add("TransitionDemo");
         mListData.add("TransitionEverywhereDemo");
+        mListData.add("PropertyAnimationDemo");
     }
 
     @Override

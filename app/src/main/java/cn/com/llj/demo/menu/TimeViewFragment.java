@@ -10,6 +10,7 @@ import cn.com.llj.demo.ListMenuFragment;
 public class TimeViewFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
+        mListData.add("DatepickerdialogDemo");
         mListData.add("TimesSquareDemo");
         mListData.add("android-calendar-card");
         mListData.add("AndroidWheel");
@@ -20,7 +21,7 @@ public class TimeViewFragment extends ListMenuFragment {
 
     @Override
     protected String getPackageName() {
-        return "com.example.demo.activity.anim";
+        return "cn.com.llj.demo.activity.timeView";
     }
 }
 
