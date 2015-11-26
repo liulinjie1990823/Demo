@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="cn.com.llj.demo">
+    <!-- This app records A/V content from camera and stores it to disk -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <permission android:name="cn.com.llj.mypermisson" />
 
@@ -13,7 +20,6 @@
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
-    <uses-feature android:name="android.hardware.camera" />
     <!-- 允许访问摄像头进行拍照 -->
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <!-- 允许访问摄像头进行自动聚焦 -->
@@ -267,10 +273,15 @@
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
             android:name="cn.com.llj.demo.activity.other.RenderScriptDemo"
-            android:exported="true"
             android:configChanges="keyboardHidden|navigation|orientation"
+            android:exported="true"
             android:permission="cn.com.llj.mypermisson"
             android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MediarecorderDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
             android:name="cn.com.llj.demo.activity.other.PermissionDemo"
