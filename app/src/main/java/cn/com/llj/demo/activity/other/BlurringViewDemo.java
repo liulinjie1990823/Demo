@@ -3,8 +3,6 @@ package cn.com.llj.demo.activity.other;
 import android.os.Bundle;
 import android.view.View;
 
-import com.fivehundredpx.android.blur.BlurringView;
-
 import cn.com.llj.demo.DemoActivity;
 import cn.com.llj.demo.R;
 

@@ -10,7 +10,13 @@ import cn.com.llj.demo.ListMenuFragment;
 public class OtherFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
+        mListData.add("PermissionDemo");
+        mListData.add("CursorLoaderDemo");
+        mListData.add("RenderScriptDemo");
+        mListData.add("ActivityManagerDemo");
         mListData.add("NotificationDemo");
+        mListData.add("UsageStatsManagerDemo");
+        mListData.add("SensorManagerDemo");
         mListData.add("BoltsDemo");
         mListData.add("FlowLayoutDemo");
         mListData.add("MaterialDesignDemo");

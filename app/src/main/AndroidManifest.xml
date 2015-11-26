@@ -3,6 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="cn.com.llj.demo">
 
+    <permission android:name="cn.com.llj.mypermisson" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -164,6 +172,26 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
         <activity
+            android:name="cn.com.llj.demo.activity.other.UsageStatsManagerDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.SensorManagerDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.CursorLoaderDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.ActivityManagerDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
             android:name="cn.com.llj.demo.activity.viewpager.VerticalViewPagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
@@ -174,6 +202,11 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.FlexibleSpaceTitlebarScrollViewDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.textview.TextSwitcherDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
@@ -233,6 +266,18 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
+            android:name="cn.com.llj.demo.activity.other.RenderScriptDemo"
+            android:exported="true"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:permission="cn.com.llj.mypermisson"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.PermissionDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
             android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo3"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
@@ -252,6 +297,16 @@
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />
+
+        <receiver android:name=".activity.other.MyAppWidgetProvider">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info"></meta-data>
+            <intent-filter>
+                <action android:name="com.llj.action.click"></action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
