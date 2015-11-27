@@ -279,6 +279,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
+            android:name="cn.com.llj.demo.activity.other.Camera2Demo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
+        <activity
             android:name="cn.com.llj.demo.activity.other.MediarecorderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="landscape"

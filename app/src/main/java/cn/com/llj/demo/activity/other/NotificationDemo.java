@@ -40,8 +40,7 @@ public class NotificationDemo extends DemoActivity {
                 notify1.icon = R.drawable.ic_launcher;
                 notify1.tickerText = "TickerText:您有新短消息，请注意查收！";// 设置在status
                 notify1.when = System.currentTimeMillis();
-                notify1.setLatestEventInfo(this, "Notification Title",
-                        "This is the notification message", pendingIntent);
+//                notify1.setLatestEventInfo(this, "Notification Title", "This is the notification message", pendingIntent);
                 notify1.number = 1;
                 notify1.flags |= Notification.FLAG_AUTO_CANCEL; // FLAG_AUTO_CANCEL表明当通知被用户点击时，通知将被清除。
                 // 通过通知管理器来发起通知。如果id不同，则每click，在statu那里增加一个提示
