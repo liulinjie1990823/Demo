@@ -279,12 +279,17 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
-            android:name="cn.com.llj.demo.activity.other.Camera2Demo"
+            android:name=".activity.other.Camera2VideoDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
-            android:name="cn.com.llj.demo.activity.other.MediarecorderDemo"
+            android:name=".activity.other.MediaDecodeDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="landscape"
+             />
+        <activity
+            android:name=".activity.other.MediaRecorderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionbarAppTheme_v19" />

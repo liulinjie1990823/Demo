@@ -23,12 +23,12 @@ import cn.com.llj.demo.R;
 /**
  * Created by liulj on 15/11/26.
  */
-public class MediarecorderDemo extends DemoActivity {
+public class MediaRecorderDemo extends DemoActivity {
     @Bind(R.id.surface_view)
     TextureView mTextureView;
     @Bind(R.id.button_capture)
     Button mCaptureBtn;
-    private static final String TAG = "MediarecorderDemo";
+    private static final String TAG = "MediaRecorderDemo";
     private boolean isRecording = false;//是否正在录制
     private Camera mCamera;
     private MediaRecorder mMediaRecorder;
