@@ -11,6 +11,7 @@ public class OtherFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
         mListData.add("Camera2VideoDemo");
+        mListData.add("Camera2ImageDemo");
         mListData.add("MediaDecodeDemo");
         mListData.add("MediaEffectsDemo");
         mListData.add("MediaRecorderDemo");

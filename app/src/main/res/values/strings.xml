@@ -51,4 +51,7 @@ Quam libero nulla netus eu porta curae, ut nulla bibendum facilisis et urna sed,
     </string>
       <string name="app_video_attrib">(c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
     </string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
 </resources>

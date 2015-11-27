@@ -62,7 +62,7 @@ public class MediaRecorderDemo extends DemoActivity {
         }
     }
 
-    class MediaPrepareTask extends AsyncTask<Void, Void, Boolean> {
+    private class MediaPrepareTask extends AsyncTask<Void, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(Void... voids) {
