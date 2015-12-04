@@ -24,9 +24,9 @@ public class ActivityManagerUtilLj {
      * @param context 上下文对象
      * @return true 前台 false 后台
      */
-    @SuppressWarnings("deprecation")
     public static boolean isApplicationInForeground(Context context) {
         ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        //用进程名来判断，因为5.0后getRunningTasks被废弃了
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             final List<RunningAppProcessInfo> processInfos = activityManager.getRunningAppProcesses();
             for (RunningAppProcessInfo processInfo : processInfos) {
@@ -38,14 +38,14 @@ public class ActivityManagerUtilLj {
             }
             return false;
         } else {
-            // 获取当前活动的task栈
+            // 获取当前活动的task栈中的应用信息来判断
             //<uses-permission android:name="android.permission.GET_TASKS" />
             List<RunningTaskInfo> tasksInfo = activityManager.getRunningTasks(1);
             if (tasksInfo != null && !tasksInfo.isEmpty()) {
                 if (context.getApplicationInfo().packageName.equals(tasksInfo.get(0).topActivity.getPackageName())) {
-//                    LogUtilLj.LLJi("context.getPackageName():" + context.getPackageName());
-//                    LogUtilLj.LLJi("context.getApplicationInfo().packageName:" + context.getApplicationInfo().packageName);
-//                    LogUtilLj.LLJi("tasksInfo.get(0).topActivity.getPackageName():" + tasksInfo.get(0).topActivity.getPackageName());
+                    //LogUtilLj.LLJi("context.getPackageName():" + context.getPackageName());
+                    //LogUtilLj.LLJi("context.getApplicationInfo().packageName:" + context.getApplicationInfo().packageName);
+                    //LogUtilLj.LLJi("tasksInfo.get(0).topActivity.getPackageName():" + tasksInfo.get(0).topActivity.getPackageName());
                     return true;
                 }
             }
@@ -93,7 +93,7 @@ public class ActivityManagerUtilLj {
     }
 
     /**
-     * 4.判断传入的名字是否在当前所有运行的进程中
+     * 4.判断传入的进程是否在当前所有运行的进程中
      *
      * @param context     上下文对象
      * @param processName 传入的进程名
@@ -117,14 +117,14 @@ public class ActivityManagerUtilLj {
     }
 
     /**
-     * 5.0之后不能使用UsageStatsManager类来获取
+     * 5.使用UsageStatsManager类来获取（5.0之前不能使用）
      * 需要加权限android:name="android.permission.PACKAGE_USAGE_STATS"
      *
      * @param context
      * @return
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public static String getForegroundApp(Context context) {
+    public static String getForegroundPackageName(Context context) {
         UsageStatsManager usageStatsManager = (UsageStatsManager) context.getSystemService(Context.USAGE_STATS_SERVICE);
         long ts = System.currentTimeMillis();
         List<UsageStats> queryUsageStats = usageStatsManager.queryUsageStats(UsageStatsManager.INTERVAL_BEST, ts - 2000, ts);

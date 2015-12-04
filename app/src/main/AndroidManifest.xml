@@ -282,7 +282,7 @@
             android:name=".activity.other.ContactableLoaderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -290,6 +290,11 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.other.GsonDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme_v19" />
         <activity
             android:name=".activity.other.Camera2VideoDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
@@ -336,6 +341,16 @@
             android:theme="@style/NoActionbarAppTheme" />
         <activity
             android:name="cn.com.llj.demo.activity.other.TouchEventDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.PopupWindowDemo"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme" />
+        <activity
+            android:name="cn.com.llj.demo.activity.other.MemoryDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbarAppTheme" />

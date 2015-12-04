@@ -10,6 +10,9 @@ import cn.com.llj.demo.ListMenuFragment;
 public class OtherFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
+        mListData.add("MemoryDemo");
+        mListData.add("PopupWindowDemo");
+        mListData.add("GsonDemo");
         mListData.add("ContactableLoaderDemo");
         mListData.add("Camera2VideoDemo");
         mListData.add("Camera2ImageDemo");

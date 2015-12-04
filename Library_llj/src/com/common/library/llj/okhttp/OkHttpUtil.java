@@ -6,6 +6,7 @@ import com.common.library.llj.base.BaseReponse;
 import com.common.library.llj.utils.AsyncHttpClientUtil;
 import com.common.library.llj.utils.LogUtilLj;
 import com.common.library.llj.utils.NetWorkUtilLj;
+import com.facebook.stetho.okhttp.StethoInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.squareup.okhttp.Callback;
@@ -50,6 +51,7 @@ public class OkHttpUtil {
                 if (mOkHttpClient == null) {
                     mOkHttpClient = new OkHttpClient();
                     mOkHttpClient.setConnectTimeout(30, TimeUnit.SECONDS);
+                    mOkHttpClient.networkInterceptors().add(new StethoInterceptor());
                 }
             }
         }

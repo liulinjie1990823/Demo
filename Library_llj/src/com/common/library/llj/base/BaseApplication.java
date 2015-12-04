@@ -21,10 +21,9 @@ import com.bumptech.glide.Glide;
 import com.common.library.llj.R;
 import com.common.library.llj.lifecycle.ActivityLifecycleCallbacksCompat;
 import com.common.library.llj.lifecycle.LifecycleDispatcher;
-import com.common.library.llj.utils.AsyncHttpClientUtil;
+import com.facebook.stetho.Stetho;
 
 import java.io.File;
-import java.lang.Thread.UncaughtExceptionHandler;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
@@ -55,22 +54,30 @@ public abstract class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;// Application实例
+        initStetho();
         // 出现应用级异常时的处理
-        Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread thread, final Throwable throwable) {
-                uploadThrowable(throwable);// 上传错误到服务器
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        showExceptionDialog(throwable);// 显示错误日志对话框
-                    }
-                }).start();
-            }
-        });
+//        Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler() {
+//            @Override
+//            public void uncaughtException(Thread thread, final Throwable throwable) {
+//                uploadThrowable(throwable);// 上传错误到服务器
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        showExceptionDialog(throwable);// 显示错误日志对话框
+//                    }
+//                }).start();
+//            }
+//        });
         initDisplay();// 初始化屏幕宽高信息
         initSavePath();// 初始化文件存储路径
         LifecycleDispatcher.registerActivityLifecycleCallbacks(this, new MyActivityLifecycleCallbacksCompat());// 注册全局activity的监听
+    }
+
+    private void initStetho() {
+        Stetho.initialize(Stetho.newInitializerBuilder(this)
+                .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
+                .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(this))
+                .build());
     }
 
     public void showExceptionDialog(Throwable throwable) {

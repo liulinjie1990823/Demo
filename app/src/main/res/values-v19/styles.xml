@@ -17,8 +17,9 @@
         <item name="android:windowBackground">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <item name="colorAccent">@color/material_green_A200</item>
-        //设置以下属性状态栏可以沉浸布局背景，最好在布局中加上fitsSystemWindows防止移位，这时候colorPrimaryDark设置的颜色无效果(在和系统drawerlayout在一起使用有效果)
-        //如果布局的背景没有则状态栏显示的是白色(最好设置有色背景)
+        //设置以下属性状态栏可以沉浸布局背景，最好在布局中加上fitsSystemWindows防止移位
+        //在和系统drawerlayout在一起使用colorPrimaryDark有效果
+        //否则则没有效果，显示的是布局背景的颜色，如果布局的背景没有则状态栏显示的是白色(最好设置有色背景)
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>
