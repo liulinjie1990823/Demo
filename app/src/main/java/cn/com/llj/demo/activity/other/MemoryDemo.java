@@ -4,6 +4,7 @@ import android.text.format.Formatter;
 import android.view.View;
 import android.widget.TextView;
 
+import com.common.library.llj.utils.ContactsUtil;
 import com.common.library.llj.utils.MemoryUtil;
 
 import butterknife.Bind;
@@ -26,6 +27,8 @@ public class MemoryDemo extends DemoActivity {
     TextView textView5;
     @Bind(R.id.textview6)
     TextView textView6;
+    @Bind(R.id.textview7)
+    TextView textView7;
 
     @Override
     public int getLayoutId() {
@@ -49,10 +52,10 @@ public class MemoryDemo extends DemoActivity {
     }
 
     public void qweqe(View view) {
-        textView5.setText("可用外存:" + MemoryUtil.getAvailMemory(this));
+        textView5.setText("可用外存:" + MemoryUtil.getRunningAvailMemory(this));
     }
 
-    public void erqqeq(View view) {
-        textView6.setText("可用外存:" + MemoryUtil.printMemoryInfo(this));
+    public void erqqeqqweq(View view) {
+        textView7.setText("可用外存:" + ContactsUtil.getSelfPhoneNumber(this));
     }
 }
