@@ -18,7 +18,6 @@ public interface OkhttpResponseHandlerInterface<T> {
 
     void sendSuccessMessage(T response);
 
-
     void sendSuccessByOtherStatus(T response);
 
     void sendFailureMessage(Request request, Exception e);
