@@ -1,7 +1,6 @@
-.gradle
+gradle/
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+.idea/
 /build
 app/build
 /captures
@@ -19,9 +18,6 @@ app/build
 # generated files
 bin/
 gen/
-
-# Local configuration file (sdk path, etc)
-local.properties
 
 # OSX files
 .DS_Store
@@ -46,10 +42,7 @@ app/libs/
 *.iml
 *.ipr
 *.iws
-.idea/
 
-#gradle
-.gradle/
 
 # Other
 .svn

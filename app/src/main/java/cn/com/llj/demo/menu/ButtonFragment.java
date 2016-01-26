@@ -11,6 +11,7 @@ public class ButtonFragment extends ListMenuFragment {
 
     @Override
     protected void setListData(List<String> mListData) {
+        mListData.add("RippleButtonDemo");
         mListData.add("CircularProgressButtonDemo");
         mListData.add("FloatingButtonDemo");
         mListData.add("ProcessButtonDemo");
@@ -19,7 +20,7 @@ public class ButtonFragment extends ListMenuFragment {
 
     @Override
     protected String getPackageName() {
-        return "com.example.demo.activity.anim";
+        return "com.example.demo.activity.button";
     }
 
 }
