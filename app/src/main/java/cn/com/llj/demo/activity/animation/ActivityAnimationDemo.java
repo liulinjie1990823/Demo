@@ -15,7 +15,7 @@ import cn.com.llj.demo.R;
 import cn.com.llj.demo.activity.attach.ScaleUpDemo;
 
 /**
- * 这是主的分支
+ * 这是真的主分支
  * Created by liulj on 15/9/1.
  */
 public class ActivityAnimationDemo extends DemoActivity {
