@@ -3,11 +3,18 @@ package cn.com.llj.demo.activity.other;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.Matrix3f;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.ScriptIntrinsicColorMatrix;
+import android.renderscript.ScriptIntrinsicConvolve5x5;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
-import android.support.v8.renderscript.*;
+
 import cn.com.llj.demo.DemoActivity;
 import cn.com.llj.demo.R;
 
