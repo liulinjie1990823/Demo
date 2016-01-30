@@ -7,6 +7,7 @@ import cn.com.llj.demo.DemoActivity;
 import cn.com.llj.demo.R;
 
 /**
+ * 测试合并分支asdadsadad
  * Created by liulj on 15/11/19.
  */
 public class ActivityManagerDemo extends DemoActivity {
