@@ -20,7 +20,7 @@ public class ButtonFragment extends ListMenuFragment {
 
     @Override
     protected String getPackageName() {
-        return "com.example.demo.activity.button";
+        return "cn.com.llj.demo.activity.button";
     }
 
 }

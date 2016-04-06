@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.common.library.llj.utils.DensityUtils;
 import com.common.library.llj.utils.ScrollUtilLj;
 import com.common.library.llj.views.KenBurnsView;
 
@@ -42,8 +43,8 @@ public class NoBoringActionBarDemo extends DemoActivity {
 
     @Override
     public void getIntentData() {
-        mHeaderHeight = 500;
-        mMinHeaderTranslation = -mHeaderHeight + 112;
+        mHeaderHeight = DensityUtils.dp2px(mBaseFragmentActivity, 250);
+        mMinHeaderTranslation = -mHeaderHeight+200 ;
     }
 
     @Override
