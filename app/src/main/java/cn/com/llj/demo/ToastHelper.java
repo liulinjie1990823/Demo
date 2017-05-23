@@ -3,13 +3,10 @@ package cn.com.llj.demo;
 import android.content.Context;
 import android.widget.Toast;
 
-import javax.inject.Inject;
-
 /**
  * Created by liulj on 15/12/5.
  */
 public class ToastHelper {
-    @Inject
     ToastHelper() {
     }
 

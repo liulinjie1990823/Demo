@@ -15,45 +15,54 @@
   -->
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_content"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/photo2">
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/main_content"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@drawable/photo2">
 
-    <android.support.design.widget.AppBarLayout
+    <me.henrytao.smoothappbarlayout.SmoothAppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            android:visibility="visible"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-        <ImageView
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cheese_3"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            android:layout_height="400dp"
+            android:text="adadadadadadadaasdasdadadadadadasdadadadadadadadaasdasdadadadadadadadadadaasdasdadadadadadadadadadaasdasdadadadadadadadadadaasdasdadad"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="400dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/cheese_3"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--/>-->
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
-    </android.support.design.widget.AppBarLayout>
+    </me.henrytao.smoothappbarlayout.SmoothAppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -61,6 +70,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_done" />
+        android:src="@drawable/ic_done"/>
 
 </android.support.design.widget.CoordinatorLayout>

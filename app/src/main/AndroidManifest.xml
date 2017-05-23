@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="cn.com.llj.demo">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.com.llj.demo">
     <!-- This app records A/V content from camera and stores it to disk -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_VIDEO" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera"/>
 
-    <permission android:name="cn.com.llj.mypermisson" />
+    <permission android:name="cn.com.llj.mypermisson"/>
 
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
     <!-- 允许访问摄像头进行拍照 -->
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
     <!-- 允许访问摄像头进行自动聚焦 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <!-- 允许程序访问SD卡 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 允许程序写入外部存储，如SD卡上写文件 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 访问电话状态 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 挂载、反挂载外部文件系统 -->
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA"/>
     <!-- 允许访问摄像头进行拍照 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
     <!-- 允许振动 -->
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <!-- 允许访问闪光灯 -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!-- 录制声音通过手机或耳机的麦克 -->
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
     <!-- 允许当前应用改变配置，如定位 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!-- 访问internet权限 -->
-    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
     <!-- 允许程序获取当前或最近运行的应用 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!-- 获取当前WiFi接入的状态以及WLAN热点的信息 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <!-- 改变WiFi状态 -->
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
     <!-- 允许程序管理AccountManager中的账户列表 -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <!-- 访问GMail账户列表 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!-- 允许应用访问联系人通讯录信息 -->
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
     <!-- 写入联系人，但不可读取 -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <!-- 允许程序获取休眠状态的锁 -->
-    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     <!-- 允许一个程序收到广播后快速收到下一个广播 -->
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <!-- 允许读写系统设置项 -->
-    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
-    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
     <!-- 允许程序调用killBackgroundProcesses(String).方法结束后台进程 -->
-    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
     <!-- 读取系统底层日志 -->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <!-- 自启动 -->
     <!-- 蓝牙分享所需的权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 
-    <uses-sdk tools:overrideLibrary="com.liangfeizc.flowlayout" />
+    <uses-sdk tools:overrideLibrary="com.liangfeizc.flowlayout"/>
     <application
         android:name="cn.com.llj.demo.DemoApplication"
         android:icon="@drawable/ic_menu"
@@ -87,201 +87,201 @@
             android:name="cn.com.llj.demo.HomeActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v21">
+            android:theme="@style/NoActionbarAppTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <activity
             android:name="cn.com.llj.demo.activity.animation.ActivityAnimationDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="cn.com.llj.demo.activity.button.RippleButtonDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.ScaleUpDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="cn.com.llj.demo.activity.animation.TransitionDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.TransitionBlueDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/SharedElementNoActionbarAppTheme" />
+            android:theme="@style/SharedElementNoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.TransitionOrDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.TransitionRedDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.TransitionPurpleDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.attach.TransitionBlackDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.animation.TransitionEverywhereDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.animation.LayoutAnimationDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.NotificationDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.animation.NiftyDialogDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.timeView.DatepickerdialogDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.animation.PropertyAnimationDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.gridView.StaggeredGridViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.gridView.StickyGridHeadersDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.BoltsDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.UsageStatsManagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.SensorManagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.CursorLoaderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.ActivityManagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.viewpager.VerticalViewPagerDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.viewpager.PagerSlidingTabStripDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.FlexibleSpaceTitlebarScrollViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.textview.TextSwitcherDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ListViewTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.NoBoringActionBarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ParallaxToolbarScrollViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ScrollViewTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.titlebar.ViewPagerTitlebarDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.FlowLayoutDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v21" />
+            android:theme="@style/NoActionbarAppTheme_v21"/>
         <activity
             android:name="cn.com.llj.demo.activity.imageview.SwipeCardDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.imageview.SelectableRoundedImageViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MaterialDesignDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo2"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.RenderScriptDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:exported="true"
             android:permission="cn.com.llj.mypermisson"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name=".activity.other.ContactableLoaderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
@@ -289,75 +289,85 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
+                android:resource="@xml/searchable"/>
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.SEARCH"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.other.GsonDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name=".activity.other.Camera2VideoDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name=".activity.other.Camera2ImageDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name=".activity.other.MediaDecodeDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".activity.other.MediaRecorderDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="landscape"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MediaEffectsDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.PermissionDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v19" />
+            android:theme="@style/NoActionbarAppTheme_v19"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MaterialDesignDetailDemo3"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme_v21" />
+            android:theme="@style/NoActionbarAppTheme_v21"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.BlurringViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.WaveViewDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.TouchEventDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.PopupWindowDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
         <activity
             android:name="cn.com.llj.demo.activity.other.MemoryDemo"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionbarAppTheme" />
+            android:theme="@style/NoActionbarAppTheme"/>
+        <activity
+            android:name="cn.com.llj.demo.activity.other.RulersActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme"/>
+        <activity
+            android:name="cn.com.llj.demo.activity.timeView.TimeTestActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarAppTheme"/>
 
         <receiver android:name=".activity.other.MyAppWidgetProvider">
             <meta-data

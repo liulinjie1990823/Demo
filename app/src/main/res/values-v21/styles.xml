@@ -19,6 +19,7 @@
         <item name="colorPrimary">@color/material_blue_500</item>
         //初始化好默认用布局的背景沉浸在状态栏，滑动后可以渐变到colorPrimaryDark设置的颜色
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 

@@ -4,4 +4,5 @@
     <color name="material_blue_700">#3367d6</color>
     <color name="material_green_A200">#FD87A9</color>
     <color name="bg">#FFF5F5F5</color>
+    <color name="main_color">#3367d6</color>   <!--当前应用主要使用的颜色-->
 </resources>

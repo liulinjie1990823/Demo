@@ -11,6 +11,7 @@ public class TimeViewFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
         mListData.add("DatepickerdialogDemo");
+        mListData.add("TimeTestActivity");
         mListData.add("TimesSquareDemo");
         mListData.add("android-calendar-card");
         mListData.add("AndroidWheel");

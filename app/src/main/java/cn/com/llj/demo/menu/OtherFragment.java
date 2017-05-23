@@ -10,6 +10,7 @@ import cn.com.llj.demo.ListMenuFragment;
 public class OtherFragment extends ListMenuFragment {
     @Override
     protected void setListData(List<String> mListData) {
+        mListData.add("RulersActivity");
         mListData.add("MemoryDemo");
         mListData.add("PopupWindowDemo");
         mListData.add("GsonDemo");
